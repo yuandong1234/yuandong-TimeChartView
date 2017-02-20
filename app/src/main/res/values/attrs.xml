@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimeLineChartView">
+        <!--折线图的类型： 0：时刻,1：周,2:月-->
+        <attr name="TimeType" format="integer" />
+        <!--折线颜色-->
+        <attr name="LineColor" format="color" />
+    </declare-styleable>
+</resources>

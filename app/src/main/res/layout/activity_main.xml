@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="yuandong.timechartview.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周统计"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+
+            />
+    </RelativeLayout>
+
+    <yuandong.timechartview.view.TimeLineChartView
+        android:id="@+id/chartView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBar"
+        app:TimeType="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chartView"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F3F5"
+            android:padding="10dp"
+            android:text="周连续数据" />
+
+        <TextView
+            android:id="@+id/tv_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="#F2F3F5"
+            android:padding="10dp"
+            android:text="周间断数据" />
+    </LinearLayout>
+
+</RelativeLayout>
